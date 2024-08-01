@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minhas Tarefas</title>
+    <style>
+        * {
+            
+         background-color: rebeccapurple;
+         place-content: center;
+         border-bottom-color: gold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Tarefa</h1>
+    <ul>
+        <li>Estudar HTML</li>
+        <li>Estudar CSS</li>
+        <li>Estudar JS</li>
+    </ul>
+    <input> 
+    <button onclick="add()">adicionar</button>
+    <script>
+        function add() {
+            const ul = document.queryselector("ul")
+            const input = document.querySelector("input")
+            const tarefa = input.value
+            
+            const li = dcoument.createElement("li")
+            li.innerText = tarefa
+            ul.appendChild(li)
+
+            input.value = ""
+        }
+    </script>
+</body>
+</html>
