@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rebeccapurple;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: white;
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.delete-btn {
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    animation: variocolor 2s infinite alternate-reverse;
+   
+}
+.delete-btn:hover {
+    background-color: rgb(71, 12, 138);
+}
+
+    .button {
+    color: rgb(250, 148, 15);
+    cursor: nw-resize;
+}
+
+@keyframes Aumentador {
+   0% {
+    transform: scale(1)
+   } 
+   100% {
+    transform: scale(1.5);
+   }
+}
+@keyframes variocolor {
+    0% {
+        background-color: #FF5733;
+    }
+    15%{
+        background-color: #FF8D1A ;
+    }
+    25% {
+        background-color: #FFC300 ;
+    }
+    50% {
+        background-color: #DAF7A6 ;
+    }
+    75%{
+        background-color: #33FFBD ;
+    }
+    100% {
+        background-color: #1A5276; 
+    }
+   }
+
+   .listadetarefas {
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0); 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    animation: variocolor 2s infinite alternate-reverse;
+    max-height: 500px;
+    max-width: 800px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+
+}
+
+#tarefaInput {
+        padding: 5px 8px;
+        background-color: white;
+        border-radius: 10px;
+        
+}
+
+#addbt {
+        padding: 5px 8px;
+        font-size: 16px;
+        color: #000000;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      #addbt:hover {
+        background-color: gray;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }      
