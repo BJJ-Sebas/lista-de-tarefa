@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-    background-color: rebeccapurple;
+    background-image: url('https://i.pinimg.com/564x/78/01/a4/7801a48ff2567d6e3f4e287eaefc581e.jpg');
+    background-size: 100%;
     color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     display: grid;
@@ -24,6 +26,7 @@ li {
     justify-content: space-between;
     align-items: center;
     
+    
 }
 .delete-btn {
     margin-left: 10px;
@@ -35,11 +38,7 @@ li {
 }
 .delete-btn:hover {
     background-color: rgb(71, 12, 138);
-}
-
-    .button {
-    color: rgb(250, 148, 15);
-    cursor: nw-resize;
+    transform: translateY(-2px);
 }
 
 @keyframes Aumentador {
@@ -72,14 +71,14 @@ li {
    }
 
    .listadetarefas {
+    backdrop-filter: blur(2px);
     border-radius: 15px;
-    border: 2px solid rgb(0, 0, 0); 
+    border: 2px solid white; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    animation: variocolor 2s infinite alternate-reverse;
     max-height: 500px;
     max-width: 800px;
     overflow: scroll;
+    resize: both;
 }
 
 ::-webkit-scrollbar {
@@ -91,7 +90,6 @@ li {
         padding: 5px 8px;
         background-color: white;
         border-radius: 10px;
-        
 }
 
 #addbt {
@@ -103,9 +101,12 @@ li {
         border-radius: 10px;
         cursor: pointer;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
       }
       
       #addbt:hover {
         background-color: gray;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-      }      
+        transform: translateY(-4px);
+        animation: variocolor 4s infinite;
+    }
