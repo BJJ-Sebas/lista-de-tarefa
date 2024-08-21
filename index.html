@@ -15,6 +15,12 @@
         <button id="addbt" onclick="add()">Adicionar</button>
     </div>
 <script>
+
+//salvador de tarefas
+let tarefas = localStorage.getItem('tarefas')
+
+localStorage.setItem('tarefas', tarefas)
+
 // estado da aplicação
 const tarefas = ['Estudar HTML', 'Estudar CSS', 'Estudar JS'];
      
@@ -51,7 +57,7 @@ function render() {
         li.appendChild(deleteBtn);
         ul.appendChild(li);
     });
-}
+    
 
 // adicionar evento de teclado para o input
 document.querySelector("#tarefaInput").addEventListener("keypress", function(event) {
